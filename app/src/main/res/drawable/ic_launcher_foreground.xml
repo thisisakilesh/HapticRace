@@ -1,0 +1,28 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Outer vibration arcs -->
+    <path
+        android:strokeColor="#00E5FF"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M 32,54 A 22,22 0 0,1 54,32 A 22,22 0 0,1 76,54" />
+    <path
+        android:strokeColor="#FF9100"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M 24,54 A 30,30 0 0,1 54,24 A 30,30 0 0,1 84,54" />
+    <!-- Center Racing Speedometer Arrow / Pulse Bolt -->
+    <path
+        android:fillColor="#00E5FF"
+        android:pathData="M 54,38 L 62,54 L 56,54 L 60,70 L 48,56 L 53,56 Z" />
+    <!-- Base telemetry dots -->
+    <path
+        android:fillColor="#FF1744"
+        android:pathData="M 40,74 A 3,3 0 1,1 40,74.1 Z" />
+    <path
+        android:fillColor="#00E676"
+        android:pathData="M 68,74 A 3,3 0 1,1 68,74.1 Z" />
+</vector>

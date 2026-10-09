@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HapticRace</string>
+    <string name="app_tagline">Telemetry-Driven Haptic Video Experience</string>
+    <string name="haptic_available">Haptic feedback available</string>
+    <string name="haptic_unavailable">Haptic feedback unavailable</string>
+    <string name="haptic_unavailable_desc">Haptic feedback is not available on this device.</string>
+</resources>

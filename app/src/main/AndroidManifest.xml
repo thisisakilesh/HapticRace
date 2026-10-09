@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Vibration hardware access -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- Video media read permissions for local storage selection -->
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <!-- Optional vibration feature tag (app works even on devices without vibrator) -->
+    <uses-feature
+        android:name="android.hardware.vibrator"
+        android:required="false" />
+
+    <application
+        android:name=".HapticRaceApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HapticRace"
+        android:hardwareAccelerated="true">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|keyboardHidden"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/Theme.HapticRace">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- Intent filter for opening video files directly if shared/opened -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="video/*" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
